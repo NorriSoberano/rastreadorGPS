@@ -18,16 +18,35 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.norrisoberano.rastreadorGPS"
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDXlaSh_tQmdCJf3Hbr6W0IPfegFgFRte8"
+        }
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "googleServicesFile",
+        "googleMaps"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.norrisoberano.rastreadorGPS"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c2b969da-7c8c-4a2b-8cd2-a535449145f5"
+      }
     }
   }
 }
